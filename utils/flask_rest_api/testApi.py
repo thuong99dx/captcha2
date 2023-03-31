@@ -76,6 +76,7 @@ async def detect_object_return_json_result(file: bytes = File(...), data=''):
     return {"result": detect_results}
 
 
+# đầu vào: path file image và label của đối tượng muốn detect có trong image
 @app.post("/image-object-to-json")
 async def detect_obj1_return_json_result(urlImage='', data=''):
     img = open(urlImage, "rb").read(-1)

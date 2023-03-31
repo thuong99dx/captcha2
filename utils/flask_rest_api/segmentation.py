@@ -1,11 +1,16 @@
+import os
+import sys
 import torch
 from PIL import Image
 import io
+from pathlib import Path
 
 
+ROOT = os.getenv("APPLICATION_DATA_DIR")
+# print(ROOT)
 def get_yolov5():
     # local best.pt
-    model = torch.hub.load(r'D:\Newfolder\captcha', 'custom', path=r'D:\Newfolder\captcha\models\best.pt', source='local')  # local repo
+    model = torch.hub.load(ROOT, 'custom', path=ROOT + r'\models\best.pt', source='local')  # local repo
     model.conf = 0.25
     return model
 
