@@ -1,0 +1,75 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#path: ../datasets/coco128  # dataset root dir
+train: ../data/train_data/images/train/  # train images (relative to 'path') 128 images
+val: ../data/train_data/images/val/  # val images (relative to 'path') 128 images
+#test:  # test images (optional)
+
+# Classes
+names:
+  0: 0
+  1: 1
+  2: 2
+  3: 3
+  4: 4
+  5: 5
+  6: 6
+  7: 7
+  8: 8
+  9: 9
+  10: a
+  11: airplanes
+  12: b
+  13: bicycles
+  14: boats
+  15: bridges
+  16: bus
+  17: c
+  18: cars
+  19: crosswalks
+  20: d
+  21: e
+  22: f
+  23: fire hydrant
+  24: g
+  25: h
+  26: i
+  27: j
+  28: k
+  29: l
+  30: m
+  31: motorcycles
+  32: n
+  33: o
+  34: p
+  35: q
+  36: r
+  37: s
+  38: street signs
+  39: t
+  40: taxis
+  41: traffic lights
+  42: trains
+  43: trucks
+  44: u
+  45: v
+  46: w
+  47: x
+  48: y
+  49: z
+  50: z1 # stairs
+  51: z2 # tractors
+  52: z3 # mountain or hill
+  53: z4 # palm trees
+  54: z5 # parking meters
+  55: z6 # chimneys
+# Download script/URL (optional)
+download: https://ultralytics.com/assets/coco128.zip
